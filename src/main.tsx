@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Register from './Register.jsx'
 import {AuthContextProvider, Login} from './Login.jsx'
 import BookDtails from './BookDetails.js'
+import BorrowedBooks from './BorrowedBooks.js'
 
 
 
@@ -19,6 +20,7 @@ root.render(
     <Route path='/register' element={<Register/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/books/:id' element={<BookDtails/>}/>
+    <Route path='books' element={<BorrowedBooks/>}/>
 
   </Routes>
   </BrowserRouter>

@@ -29,6 +29,7 @@ export const BorrowProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const borrowBook = (book: Book) => {
     if (borrowedBooks.length < 2 && !borrowedBooks.find(b => b.id === book.id)) {
       setBorrowedBooks([...borrowedBooks, book]);
+      console.log(borrowedBooks)
     } else if (borrowedBooks.length >= 2) {
       alert('Cannot borrow more than 2 books at the same time.');
     }

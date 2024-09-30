@@ -23,14 +23,14 @@ const Nav: React.FC = () => {
           </Link>
         </>
       )}
-      {isLoggedIn && (
+      
         <>
       <Link to="/books">
-        <p>Books</p>
+        <p>Borrowed Books</p>
       </Link>
       <Link to="/genre">
         <p>Genre</p>
-      </Link></>)}
+      </Link></>
     </div>
   );
 };
