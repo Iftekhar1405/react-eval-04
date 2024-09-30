@@ -1,0 +1,18 @@
+.cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.cont div {
+  border: 2px solid grey;
+  margin: 10px;
+  padding: 10px;
+}
+.light {
+  background-color: wheat;
+  color: red;
+}
+.dark {
+  background-color: black;
+  color: rgb(206, 129, 129);
+}
